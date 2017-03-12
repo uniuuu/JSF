@@ -7,14 +7,20 @@
 
 <!--  	<ui:composition template="">
 	</ui:composition> -->
-
+<h:outputStylesheet library="css" name="styles.css"/>
 <h:head>
 <h:body>
 <h:form>
 <h:panelGrid colums="3">  
 <h:outputLabel value="Username"/>
-<h:inputText value="" required="true" requiredMessage="Please, fill this field" id="username"/>
+<h:inputText value="#{bean1.name}" required="true" requiredMessage="Please, fill this field" id="username"/>
+<h:message for="username" class="error_message"/>
 
+<h:outputLabel value="Password"/>
+<h:inputText value="#{bean1.password}" required="true" requiredMessage="Please, fill this field" id="password"/>
+<h:message for="password" class="error_message"/>
+
+<h:commandButton value="Login" action="#{bean1.action()}"/>
 </h:panelGrid>
 
 
