@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:mj="http://mojarra.dev.java.net/mojarra_ext">
+
+<!--  <h:head>
+JSF Demo Page
+</h:head>-->
+<h:body>
+ <!--  <h:outputLabel value="This is a JSF"/> --> 
+ <h:outputLabel value="#{greetbean.greet}"/>
+
+</h:body>
+<h:outputLink value="login.xhtml">Login</h:outputLink><br/>
+<h:outputLink value="register.xhtml">Register</h:outputLink><br/>
+<h:outputLink value="forum.xhtml">Forum</h:outputLink><br/>
+<h:outputLink value="logout.xhtml">Logout</h:outputLink><br/>
+<!--  	<ui:composition template="">
+	</ui:composition>
+	
+	-->
+</html>
